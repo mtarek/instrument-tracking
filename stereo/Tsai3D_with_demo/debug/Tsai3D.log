@@ -1,0 +1,31 @@
+﻿Build started 9/18/2014 3:47:05 PM.
+     1>Project "G:\!Research\Tracking\APTSerialCom\Tsai3D_with_demo\Tsai3D.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt cminpack.c m3.c main_.c matrix.c tsai3D.c
+         tsai3D.c
+         matrix.c
+         main_.c
+     1>g:\!research\tracking\aptserialcom\tsai3d_with_demo\main_.c(21): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
+     1>g:\!research\tracking\aptserialcom\tsai3d_with_demo\main_.c(49): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
+     1>g:\!research\tracking\aptserialcom\tsai3d_with_demo\main_.c(56): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(237) : see declaration of 'fscanf'
+     1>g:\!research\tracking\aptserialcom\tsai3d_with_demo\main_.c(128): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\conio.h(131) : see declaration of 'getch'
+         m3.c
+         cminpack.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\Tsai3D.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Debug\zhang.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\Tsai3D.lib" /MACHINE:X86 /SAFESEH Debug\cminpack.obj
+         Debug\m3.obj
+         Debug\main_.obj
+         Debug\matrix.obj
+         Debug\tsai3D.obj
+     1>cminpack.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         Tsai3D.vcxproj -> G:\!Research\Tracking\APTSerialCom\Tsai3D_with_demo\Debug\Tsai3D.exe
+     1>Done Building Project "G:\!Research\Tracking\APTSerialCom\Tsai3D_with_demo\Tsai3D.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.99

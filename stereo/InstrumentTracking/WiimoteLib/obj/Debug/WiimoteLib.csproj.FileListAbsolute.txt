@@ -1,0 +1,12 @@
+C:\Projects\Personal\Wiimote\WiimoteCS\WiimoteLib\bin\Debug\WiimoteLib.dll
+C:\Projects\Personal\Wiimote\WiimoteCS\WiimoteLib\bin\Debug\WiimoteLib.pdb
+C:\Projects\Personal\Wiimote\WiimoteCS\WiimoteLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Personal\Wiimote\WiimoteCS\WiimoteLib\obj\Debug\WiimoteLib.dll
+C:\Projects\Personal\Wiimote\WiimoteCS\WiimoteLib\obj\Debug\WiimoteLib.pdb
+C:\Projects\Personal\Wiimote\WiimoteCS\WiimoteLib\bin\Debug\WiimoteLib.XML
+D:\grad\lab\WiimoteCS\WiimoteLib\bin\Debug\WiimoteLib.XML
+D:\grad\lab\WiimoteCS\WiimoteLib\bin\Debug\WiimoteLib.dll
+D:\grad\lab\WiimoteCS\WiimoteLib\bin\Debug\WiimoteLib.pdb
+D:\grad\lab\WiimoteCS\WiimoteLib\obj\Debug\WiimoteLib.dll
+D:\grad\lab\WiimoteCS\WiimoteLib\obj\Debug\WiimoteLib.pdb
+D:\grad\lab\WiimoteCS\WiimoteLib\obj\Debug\WiimoteLib.csprojResolveAssemblyReference.cache

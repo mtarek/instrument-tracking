@@ -1,0 +1,10 @@
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\bin\Release\APTSerialCom.exe.config
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\obj\Release\Interop.MG17MotorLib.dll
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\obj\Release\AxInterop.MG17MotorLib.dll
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\obj\Release\InstrumentTracking.csproj.ResolveComReference.cache
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\obj\Release\InstrumentTracking.csprojResolveAssemblyReference.cache
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\obj\Release\InstrumentTracking.CalibrationForm.resources
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\obj\Release\InstrumentTracking.CameraForm.resources
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\obj\Release\InstrumentTracking.MainForm.resources
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\obj\Release\InstrumentTracking.ThorMotorController.resources
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\obj\Release\InstrumentTracking.csproj.GenerateResource.Cache

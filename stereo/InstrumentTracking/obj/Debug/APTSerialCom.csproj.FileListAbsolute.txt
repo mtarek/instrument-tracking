@@ -1,0 +1,15 @@
+C:\Users\Bioptigen User\Desktop\apt stuff\APTSerialCom\APTSerialCom\bin\Debug\APTSerialCom.exe.config
+C:\Users\Bioptigen User\Desktop\apt stuff\APTSerialCom\APTSerialCom\bin\Debug\APTSerialCom.exe
+C:\Users\Bioptigen User\Desktop\apt stuff\APTSerialCom\APTSerialCom\bin\Debug\APTSerialCom.pdb
+C:\Users\Bioptigen User\Desktop\apt stuff\APTSerialCom\APTSerialCom\bin\Debug\FTD2XX_NET.dll
+C:\Users\Bioptigen User\Desktop\apt stuff\APTSerialCom\APTSerialCom\bin\Debug\FTD2XX_NET.xml
+C:\Users\Bioptigen User\Desktop\apt stuff\APTSerialCom\APTSerialCom\obj\Debug\APTSerialCom.csprojResolveAssemblyReference.cache
+C:\Users\Bioptigen User\Desktop\apt stuff\APTSerialCom\APTSerialCom\obj\Debug\APTSerialCom.exe
+C:\Users\Bioptigen User\Desktop\apt stuff\APTSerialCom\APTSerialCom\obj\Debug\APTSerialCom.pdb
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\bin\Debug\APTSerialCom.exe.config
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\obj\Debug\APTSerialCom.exe
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\obj\Debug\APTSerialCom.pdb
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\obj\Debug\APTSerialCom.csprojResolveAssemblyReference.cache
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\bin\Debug\APTSerialCom.exe
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\bin\Debug\APTSerialCom.pdb
+G:\!Research\Tracking\APTSerialCom\APTSerialCom\bin\Debug\FTD2XX_NET.xml

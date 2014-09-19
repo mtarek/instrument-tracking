@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E4A5B9F-FCA1-4576-AF78-508C67AEF396}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InstrumentTracking</RootNamespace>
+    <AssemblyName>APTSerialCom</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FTD2XX_NET">
+      <HintPath>..\..\FTD2XX_NET_v1.0.14\FTD2XX_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalibrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalibrationForm.Designer.cs">
+      <DependentUpon>CalibrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Camera.cs" />
+    <Compile Include="IMotorController.cs" />
+    <Compile Include="CameraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CameraForm.Designer.cs">
+      <DependentUpon>CameraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThorController.cs" />
+    <Compile Include="CalibrationModel.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Stereo.cs" />
+    <Compile Include="CalibrationView.cs" />
+    <Compile Include="ThorMotorController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThorMotorController.Designer.cs">
+      <DependentUpon>ThorMotorController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tracking.cs" />
+    <Compile Include="WiimoteLib\DataTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WiimoteLib\Events.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WiimoteLib\HIDImports.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WiimoteLib\Properties\AssemblyInfo.cs" />
+    <Compile Include="WiimoteLib\Wiimote.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="WiimoteLib\docs\APIHelp\AdditionalContent\changes.topic" />
+    <None Include="WiimoteLib\docs\APIHelp\AdditionalContent\copyright.topic" />
+    <None Include="WiimoteLib\docs\APIHelp\AdditionalContent\license.topic" />
+    <None Include="WiimoteLib\docs\APIHelp\AdditionalContent\overview.topic" />
+    <None Include="WiimoteLib\docs\APIHelp\Help\LastBuild.log" />
+    <None Include="WiimoteLib\docs\APIHelp\Help\WiimoteLib.chm" />
+    <None Include="WiimoteLib\docs\APIHelp\Help\WiimoteLib.chw" />
+    <None Include="WiimoteLib\docs\APIHelp\WiimoteLib.shfb" />
+    <None Include="WiimoteLib\docs\APIHelp\WiimoteLib.sitemap" />
+    <None Include="WiimoteLib\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WiimoteLib\obj\Debug\WiimoteLib.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WiimoteLib\bin\Debug\WiimoteLib.dll" />
+    <Content Include="WiimoteLib\bin\Debug\WiimoteLib.pdb" />
+    <Content Include="WiimoteLib\bin\Debug\WiimoteLib.XML" />
+    <Content Include="WiimoteLib\bin\Release\WiimoteLib.dll" />
+    <Content Include="WiimoteLib\bin\Release\WiimoteLib.pdb" />
+    <Content Include="WiimoteLib\docs\copyright.txt" />
+    <Content Include="WiimoteLib\docs\license.txt" />
+    <Content Include="WiimoteLib\docs\readme.txt" />
+    <Content Include="WiimoteLib\obj\Debug\Refactor\WiimoteLib.dll" />
+    <Content Include="WiimoteLib\obj\Debug\WiimoteLib.csproj.FileListAbsolute.txt" />
+    <Content Include="WiimoteLib\obj\Debug\WiimoteLib.dll" />
+    <Content Include="WiimoteLib\obj\Debug\WiimoteLib.pdb" />
+    <Content Include="WiimoteLib\obj\Release\Refactor\WiimoteLib.dll" />
+    <Content Include="WiimoteLib\obj\Release\WiimoteLib.csproj.FileListAbsolute.txt" />
+    <Content Include="WiimoteLib\obj\Release\WiimoteLib.dll" />
+    <Content Include="WiimoteLib\obj\Release\WiimoteLib.pdb" />
+    <Content Include="WiimoteLib\obj\WiimoteLib.csproj.FileList.txt" />
+    <Content Include="WiimoteLib\WiimoteLib.csproj" />
+    <Content Include="WiimoteLib\WiimoteLib.csproj.user" />
+    <Content Include="WiimoteLib\WiimoteLib.csproj.vspscc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="WiimoteLib\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMG17MotorLib">
+      <Guid>{2A833923-9AA7-4C45-90AC-DA4F19DC24D1}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MG17MotorLib">
+      <Guid>{2A833923-9AA7-4C45-90AC-DA4F19DC24D1}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CalibrationForm.resx">
+      <DependentUpon>CalibrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CameraForm.resx">
+      <DependentUpon>CameraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThorMotorController.resx">
+      <DependentUpon>ThorMotorController.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
