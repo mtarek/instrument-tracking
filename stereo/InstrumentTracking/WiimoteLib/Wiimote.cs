@@ -919,12 +919,22 @@ namespace WiimoteLib
 		/// </summary>
 		private void WriteReport()
 		{
-			if(mAltWriteMethod)
-				HIDImports.HidD_SetOutputReport(this.mHandle.DangerousGetHandle(), mBuff, (uint)mBuff.Length);
-			else if(mStream != null)
-				mStream.Write(mBuff, 0, REPORT_LENGTH);
+            try
+            {
+                if (mAltWriteMethod)
+                    HIDImports.HidD_SetOutputReport(this.mHandle.DangerousGetHandle(), mBuff, (uint)mBuff.Length);
+                else if (mStream != null)
+                    mStream.Write(mBuff, 0, REPORT_LENGTH);
 
-			Thread.Sleep(100);
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                Thread.Sleep(100);
+            }
 		}
 
 		/// <summary>

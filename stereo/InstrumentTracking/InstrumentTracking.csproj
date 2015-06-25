@@ -35,8 +35,20 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="3DTools, Version=1.0.2614.20437, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\3DTools.dll</HintPath>
+    </Reference>
     <Reference Include="FTD2XX_NET">
       <HintPath>..\..\FTD2XX_NET_v1.0.14\FTD2XX_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Common, Version=13.0.40.190, Culture=neutral, PublicKeyToken=dc6ad606294fc298, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\National Instruments\MeasurementStudioVS2012\DotNET\Assemblies\Current\NationalInstruments.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.DAQmx, Version=9.9.45.39, Culture=neutral, PublicKeyToken=4febd62461bf11a4, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\National Instruments\MeasurementStudioVS2012\DotNET\Assemblies\Current\NationalInstruments.DAQmx.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoClosingMessageBox.cs" />
     <Compile Include="CalibrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,11 +76,18 @@
     <Compile Include="CameraForm.Designer.cs">
       <DependentUpon>CameraForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Integers.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matrix.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="ThorController.cs" />
     <Compile Include="CalibrationModel.cs" />
@@ -82,6 +102,14 @@
       <DependentUpon>ThorMotorController.cs</DependentUpon>
     </Compile>
     <Compile Include="Tracking.cs" />
+    <Compile Include="TrackingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrackingForm.Designer.cs">
+      <DependentUpon>TrackingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <Compile Include="Vector3.cs" />
     <Compile Include="WiimoteLib\DataTypes.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -111,6 +139,8 @@
     <None Include="WiimoteLib\obj\Debug\WiimoteLib.csprojResolveAssemblyReference.cache" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="libfftw3-3.dll" />
+    <Content Include="libfftw3f-3.dll" />
     <Content Include="WiimoteLib\bin\Debug\WiimoteLib.dll" />
     <Content Include="WiimoteLib\bin\Debug\WiimoteLib.pdb" />
     <Content Include="WiimoteLib\bin\Debug\WiimoteLib.XML" />
@@ -133,7 +163,6 @@
     <Content Include="WiimoteLib\WiimoteLib.csproj.vspscc" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Properties\" />
     <Folder Include="WiimoteLib\obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +183,15 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+    <COMReference Include="MLApp">
+      <Guid>{C36E46AB-6A81-457B-9F91-A7719A06287F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CalibrationForm.resx">
@@ -165,9 +203,22 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThorMotorController.resx">
       <DependentUpon>ThorMotorController.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TrackingForm.resx">
+      <DependentUpon>TrackingForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="FFTWSharp-master\FFTWSharp\FFTWSharp.csproj">
+      <Project>{bea875b8-e28a-49c5-8e7e-6512da65f7e1}</Project>
+      <Name>FFTWSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

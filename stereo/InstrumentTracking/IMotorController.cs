@@ -10,5 +10,7 @@ namespace InstrumentTracking
     {
         void MoveRelative(float displacement, bool waitTillDone);
         void MoveAbsolute(float position, bool waitTillDone);
+        float GetPosition();
+
     }
 }

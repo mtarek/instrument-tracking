@@ -63,6 +63,13 @@ namespace InstrumentTracking
             Z += offZ;
         }
 
+        public void Set(double x, double y, double z)
+        {
+            X = x;
+            Y = y;
+            Z = z;
+        }
+
         public override string ToString()
         {
             return "(" + X + "," + Y + "," + Z + ")";

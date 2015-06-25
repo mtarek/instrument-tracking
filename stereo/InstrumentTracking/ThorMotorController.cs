@@ -34,12 +34,20 @@ namespace InstrumentTracking
         public void MoveRelative(float displacement, bool waitTillDone)
         {
             axMG17Motor1.SetRelMoveDist(0, displacement);
-            axMG17Motor1.MoveRelative(0, waitTillDone);
+            axMG17Motor1.MoveRelative(0, waitTillDone);  
         }
 
         public void Display(object data)
         {
             this.ShowDialog();
+        }
+
+
+        public float GetPosition()
+        {
+            float pos = 0;
+            axMG17Motor1.GetPosition(0, ref pos);
+            return pos;
         }
     }
 }
